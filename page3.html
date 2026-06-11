@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>@Fairus</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-image: url('images/back.jpg');
+      background-size: cover; /* ปรับขนาดภาพให้ครอบคลุมพื้นที่ทั้งหมดของ body */
+      background-position: center; /* จัดภาพให้อยู่ตรงกลาง */
+      background-attachment: fixed; /* (Optional) ให้ภาพพื้นหลังตรึงอยู่กับที่เมื่อสกロール */
+      background-repeat: no-repeat;
+      font-family: 'Segoe UI', Arial, Tahoma, Geneva, Verdana, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+    line-block;
+            text-decoration: none;
+            background-color: #333333; /* ปุ่มสีดำเทา ดูมินิมอล */
+            color: #ffffff;            /* ตัวหนังสือสีขาว */
+            padding: 10px 20px;        /* ขนาดของปุ่ม */
+            border-radius: 20px;       /* ทำปุ่มให้โค้งมน */
+            font-size: 14px;
+            font-weight: bold;
+            transition: background-color 0.2s, transform 0.1s;
+            cursor: pointer;
+      }
+    .nav-btn{
+        display: inline-block;
+        text-decoration: none;
+        background-color: #333333; /* ปุ่มสีดำเทา ดูมินิมอล */
+        color: #ffffff;            /* ตัวหนังสือสีขาว */
+        padding: 10px 20px;        /* ขนาดของปุ่ม */
+        border-radius: 20px;       /* ทำปุ่มให้โค้งมน */
+        font-size: 14px;
+        font-weight: bold;
+        transition: background-color 0.2s, transform 0.1s;
+        cursor: pointer;
+    }
+    .nav-btn:hover{
+        background-color: #555555;
+        transform: scale(1.05);
+    }
+       
+    /* สร้าง Container หลักเพื่อจัดให้หัวข้อและปุ่มอยู่ตรงกลางและเรียงซ้อนกัน */
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center; 
+      width: 100%;
+      max-width: 400px;
+      padding: 20px;
+    }
+
+    .profile-title {
+      margin-bottom: 20px;
+      color: #333333;
+      font-size: 24px;
+    }
+
+    .social-my {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      width: 100%;
+    }
+
+    .link-social {
+      display: flex;
+      align-items: center; /* แก้ไขคำผิดจาก align-item เป็น align-items */
+      text-decoration: none;
+      padding: 12px 16px;
+      border-radius: 25px;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .tt-social {
+      background-color: #555555;
+      color: #ffffff;
+    }
+
+
+    .social-icon {
+      border-radius: 15px;
+      width: 60px;
+      height: 60px;
+      object-fit: cover;
+      margin-right: 15px;
+    }
+
+    .icon-text {
+      font-size: 18px;
+      font-weight: 500;
+    }
+
+    /* แก้ไขให้เอฟเฟกต์ Hover ทำงานกับตัวปุ่มทั้งหมด (ไม่ใช่แค่ตัวหนังสือ) เพื่อความสมูท */
+    .link-social:hover {
+      transform: scale(1.03);
+      box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+    }
+  </style>
+</head>
+<body>
+
+    <div class="nav-container">
+        <a href="index.html" oneclick="history.back(); return false;" class="nav-btn"> <img src="image/retune.png" style="width: 50px; height:50px; border-radius:50%;"> </a>
+    </div>
+    
+  <div class="container">
+      <img src="image/my.png" alt="" style="width: 120px; height:120px; border-radius:50%;">
+    <h2 class="profile-title">My Tiktok</h2>
+    
+    <div class="social-my">
+      <!-- Instagram -->
+      <a href="https://www.tiktok.com/@fairus2551" class="link-social tt-social">
+        <img class="social-icon" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTX9JJ1gad87SSylBiaF3k4sQ_7NzQVhjul1rMQ9-GF-k-znPL67LyAfUOxPQ&s" alt="TikTok">
+        <span class="icon-text">Tiktok:fairus2551 (หลัก)</span>
+      </a>
+    </div>
+      
+    </div>
+  </div>
+
+</body>
+</html>
