@@ -1,1 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>@Fairus</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #ffffff;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      width: 100%;
+      max-width: 400px;
+      padding: 20px;
+    }
+       
+    .profile-title {
+      margin-bottom: 20px;
+      color: #333333;
+      font-size: 24px;
+      text-align:center;
+    }
+    .social-my {
+      display: flex;
+      flex-direction: column; /* ให้ปุ่มเรียงซ้อนกันลงมา */
+      align-items: center;    /* จัดปุ่มให้อยู่กึ่งกลาง */
+      gap: 20px;             /* ระยะห่างระหว่างปุ่ม */
+      width: 100%;
+    }
 
+    .social-icon {
+      border-radius: 15px;
+      width: 60px;
+      height: 60px;
+      object-fit: cover;    
+    }
+    .social-icon:hover {
+      transform: scale(1.03);
+      box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+    }
+    /* แก้ไขให้เอฟเฟกต์ Hover ทำงานกับตัวปุ่มทั้งหมด (ไม่ใช่แค่ตัวหนังสือ) เพื่อความสมูท */
+    .link-social:hover {
+      transform: scale(1.08 );
+      box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+    }
+  </style>
+</head>
+<body>
+    
+  <div class="container">
+      <img src="image/my.png" alt="" style="width: 120px; height:120px; border-radius:50%;">
+    <h2 class="profile-title">Link TO MySocial</h2>
+    
+    <div class="social-my">
+      <!-- Instagram -->
+      <a href="page2.html" class="link-social ig-social">
+        <img class="social-icon" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTE3XwrQI2LKaakHXVo0K6IVbUcqF6aSII0YoTnsJOJ_IwmEbTlR_vhQeFMtw&s" alt="Instagram">
+      </a>
+      
+      <!-- Tiktok -->
+      <a href="page3.html" class="link-social tt-social">
+        <img class="social-icon" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTX9JJ1gad87SSylBiaF3k4sQ_7NzQVhjul1rMQ9-GF-k-znPL67LyAfUOxPQ&s" alt="TikTok">
+      </a>
+    </div>
+  </div>
+
+</body>
+</html>
