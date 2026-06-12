@@ -9,6 +9,9 @@
     body {
       margin: 0;
       padding: 0;
+      background: url("image/back.jpg")
+    center center/cover no-repeat;
+      background-attachment: fixed;
       background-color: #ffffff;
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       display: flex;
@@ -25,13 +28,31 @@
       margin: 0 auto;
       padding: 20px;
     }
+    .img-my{
+         display: flex;
+         align-items: center; /* แก้ไขคำผิดจาก align-item เป็น align-items */
+         text-decoration: none;
+         padding: 5px 5px;
+         border-radius: 20%;
+         transition: transform 0.2s ease, box-shadow 0.2s ease;
+         background-color:white;
+    }
        
     .profile-title {
       margin-bottom: 20px;
       color: #333333;
       font-size: 24px;
       text-align:center;
+      display: flex;
+      align-items: center; /* แก้ไขคำผิดจาก align-item เป็น align-items */
+      text-decoration: none;
+      padding: 7px 10px;
+      border-radius: 25px;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+        background-color: white;
+        color:black;
     }
+    
     .social-my {
       display: flex;
       flex-direction: row; /* ให้ปุ่มเรียงซ้อนกันลงมา */
@@ -53,6 +74,9 @@
       height: 60px;
       object-fit: cover;    
     }
+    .f-icon{
+        border-radius: 50%
+    }
     .social-icon:hover {
       transform: scale(1.03);
       box-shadow: 0 5px 15px rgba(0,0,0,0.15);
@@ -67,8 +91,8 @@
 <body>
     
   <div class="container">
-      <img src="image/my.png" alt="" style="width: 120px; height:120px; border-radius:50%; flex-direction: column;">
-    <h2 class="profile-title">🔗 Links My Social😊👈🏻</h2>
+      <img class="img-my" src="image/my.png" alt="" style="width: 120px; height:120px; border-radius:50%; flex-direction: column;">
+    <h2 class="profile-title name">🔗 Links My Social😊👈🏻</h2>
     
     <div class="social-my">
       <!-- Instagram -->
@@ -83,7 +107,7 @@
 
      <!--Facebook-->
         <a href="page4.html" class="link-social f-social">
-            <img class="social-icon" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSoPYg-1x3kn_QMqzkEIddYVBwPe_DGzhVXqGAUWhxVOTOEZxGY-FHPIUmGA&s" atl="Facebook">
+            <img class="social-icon f-icon" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSoPYg-1x3kn_QMqzkEIddYVBwPe_DGzhVXqGAUWhxVOTOEZxGY-FHPIUmGA&s" atl="Facebook">
         </a>
     </div>
   </div>

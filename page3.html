@@ -9,15 +9,23 @@
     body {
       margin: 0;
       padding: 0;
-      background-image: url('images/back.jpg');
-      background-size: cover; /* ปรับขนาดภาพให้ครอบคลุมพื้นที่ทั้งหมดของ body */
-      background-position: center; /* จัดภาพให้อยู่ตรงกลาง */
-      background-attachment: fixed; /* (Optional) ให้ภาพพื้นหลังตรึงอยู่กับที่เมื่อสกロール */
-      background-repeat: no-repeat;
+      background: url("image/back.jpg")
+    center center/cover no-repeat;
+      background-attachment: fixed;
       font-family: 'Segoe UI', Arial, Tahoma, Geneva, Verdana, sans-serif;
       display: flex;
       justify-content: center;
       align-items: center;
+    }
+      
+    .img-my{
+         display: flex;
+         align-items: center; /* แก้ไขคำผิดจาก align-item เป็น align-items */
+         text-decoration: none;
+         padding: 5px 5px;
+         border-radius: 20%;
+         transition: transform 0.2s ease, box-shadow 0.2s ease;
+         background-color:white;
     }
     line-block;
             text-decoration: none;
@@ -61,6 +69,15 @@
       margin-bottom: 20px;
       color: #333333;
       font-size: 24px;
+      text-align:center;
+      display: flex;
+      align-items: center; /* แก้ไขคำผิดจาก align-item เป็น align-items */
+      text-decoration: none;
+      padding: 7px 10px;
+      border-radius: 25px;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+        background-color: white;
+        color:black;
     }
 
     .social-my {
@@ -112,7 +129,7 @@
     </div>
     
   <div class="container">
-      <img src="image/my.png" alt="" style="width: 120px; height:120px; border-radius:50%;">
+       <img class="img-my" src="image/my.png" alt="" style="width: 120px; height:120px; border-radius:50%; flex-direction: column;">
     <h2 class="profile-title">My Tiktok</h2>
     
     <div class="social-my">
